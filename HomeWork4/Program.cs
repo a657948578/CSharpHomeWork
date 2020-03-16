@@ -72,15 +72,15 @@ namespace _3._9_1_
             {
                 list.Add(x);
             }
-            //打印元素
+            //输出所有元素
             Console.WriteLine("输出所有元素：");
             list.ForEach(i => Console.WriteLine(i));
-            //求最大值 
+            //max
             Console.WriteLine("max:");
             int max = 0;
             list.ForEach(delegate (int i) { max = max < i ? i : max; });
             Console.WriteLine(max);
-            //求和
+            //sum
             Console.WriteLine("sum:");
             int sum = 0;
             list.ForEach(i => sum += i);
